@@ -1,0 +1,37 @@
+.blogs {
+  .wrapper {
+    ul {
+      padding: 0;
+      display: flex;
+      width: 600px;
+      justify-content: space-evenly;
+      @media only screen and (max-width: 1060px) {
+        display: flex;
+        justify-content: center;
+        margin: 20px auto;
+        margin-bottom: 40px;
+      }
+      @media only screen and (max-width: 790px) {
+        width: 400px;
+      }
+
+      li {
+        cursor: pointer;
+        text-transform: capitalize;
+        padding: 10px;
+      }
+      .active {
+        background: #6c757d;
+        border-radius: 10px;
+      }
+    }
+    .items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      @media only screen and (max-width: 1060px) {
+        justify-content: center;
+      }
+    }
+  }
+}

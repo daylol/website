@@ -1,0 +1,28 @@
+.footer {
+  padding: 20px 0;
+  .wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    .logo {
+      transition: 0.9s ease-in-out;
+      .white {
+        color: #fff;
+      }
+      .grey {
+        color: #c2c6dd;
+      }
+      &:hover {
+        .white {
+          color: #c2c6dd;
+        }
+        .grey {
+          color: #fff;
+        }
+      }
+    }
+    div {
+      display: flex;
+    }
+  }
+}

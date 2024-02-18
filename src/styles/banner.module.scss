@@ -1,0 +1,50 @@
+.banner {
+  width: calc(100% - 4%);
+  margin: 0 auto;
+  box-shadow: 0 8px 10px -6px rgba(0, 0, 0, 0.1), 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  background: #23202a;
+  border-radius: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media only screen and (max-width: 1024px) {
+      flex-direction: column;
+    }
+    .info {
+      padding: 128px 0 128px 0;
+      width: 580px;
+      @media only screen and (max-width: 1024px) {
+        padding: 64px 0;
+      }
+      @media only screen and (max-width: 764px) {
+        padding: 30px 0;
+        width: 480px;
+      }
+      @media only screen and (max-width: 550px) {
+        width: 400px;
+      }
+      h1 {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        line-height: 100%;
+      }
+      p {
+        margin-bottom: 50px;
+        line-height: 140%;
+        @media only screen and (max-width: 700px) {
+          margin-bottom: 30px;
+        }
+      }
+    }
+    .video {
+      @media only screen and (max-width: 1024px) {
+        margin-bottom: 50px;
+      }
+    }
+  }
+}

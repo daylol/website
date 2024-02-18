@@ -1,0 +1,15 @@
+.label {
+  max-width: max-content;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border-radius: 9999px 9999px 9999px 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: 0.02em;
+  color: #fff;
+  background: linear-gradient(90deg, #1e1b24 0%, #19181f 100%);
+  @media only screen and (max-width: 790px) {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,51 @@
+.job {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media only screen and (max-width: 790px) {
+    margin-top: 30px;
+    flex-direction: column;
+  }
+  .general {
+    flex: 3;
+    h1 {
+      text-align: left;
+      line-height: 100%;
+    }
+    p {
+      text-align: left;
+      margin: 0;
+    }
+    ul {
+      display: flex;
+      padding: 0;
+      li {
+        max-width: 400px;
+        h5 {
+          color: #fff;
+          margin: 10px 0;
+        }
+      }
+    }
+  }
+
+  .photo {
+    flex: 1;
+    @media only screen and (max-width: 790px) {
+      img {
+        height: 500px;
+        width: auto;
+      }
+    }
+  }
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+    .general {
+      margin-left: 50px;
+    }
+    @media only screen and (max-width: 790px) {
+      flex-direction: column;
+    }
+  }
+}

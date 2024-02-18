@@ -1,0 +1,35 @@
+.blog {
+  .wrapper {
+    .video {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    h2 {
+      margin: 20px 0;
+    }
+    p {
+      line-height: 100%;
+      margin-bottom: 20px;
+    }
+    button {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 137%;
+      color: #19181f;
+      padding: 8px 15px;
+      background: #fff;
+      border-radius: 20px;
+      cursor: pointer;
+      opacity: 1;
+      transition: 0.3s;
+      &:active {
+        color: initial;
+      }
+      &:hover {
+        color: #fff;
+        background: #121117;
+      }
+    }
+  }
+}

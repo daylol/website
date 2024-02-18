@@ -1,0 +1,27 @@
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  box-shadow: 0 8px 10px -6px rgba(0, 0, 0, 0.1), 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  background: #23202a;
+  border-radius: 24px;
+  max-width: calc(100vw - 90px);
+  margin: 0 auto;
+  margin-top: 50px;
+  padding-right: 100px;
+  @media only screen and (max-width: 1024px) {
+    padding-right: 50px;
+  }
+  @media only screen and (max-width: 790px) {
+    flex-direction: column;
+    padding: 25px;
+  }
+  h2 {
+    max-width: 600px;
+    @media only screen and (max-width: 790px) {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+}

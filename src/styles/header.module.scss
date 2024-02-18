@@ -1,0 +1,75 @@
+.header {
+  padding: 15px 0;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media only screen and (max-width: 1024px) {
+      padding: 20px 15px;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    .logo {
+      transition: 0.9s ease-in-out;
+      .white {
+        color: #fff;
+      }
+      .grey {
+        color: #c2c6dd;
+      }
+      &:hover {
+        .white {
+          color: #c2c6dd;
+        }
+        .grey {
+          color: #fff;
+        }
+      }
+    }
+    .nav {
+      display: flex;
+      justify-content: center;
+      ul {
+        display: flex;
+        padding-left: 0;
+        li {
+          margin: 0 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          a {
+            padding: 5px 10px;
+            color: #c2c6dd;
+            &:hover {
+              background: #6c757d;
+              border-radius: 10px;
+            }
+          }
+        }
+        .active {
+          background: #6c757d;
+          border-radius: 10px;
+        }
+      }
+      @media only screen and (max-width: 750px) {
+        display: none;
+      }
+    }
+    .mobileActive {
+      cursor: pointer;
+
+      @media only screen and (max-width: 1700px) {
+        display: none;
+      }
+      @media only screen and (max-width: 750px) {
+        display: flex;
+        margin-right: -80px;
+      }
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    padding: 0 15px;
+  }
+}

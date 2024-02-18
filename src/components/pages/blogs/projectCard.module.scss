@@ -1,0 +1,33 @@
+.card {
+  width: 500px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 8px 10px -6px rgba(0, 0, 0, 0.1), 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  background: #23202a;
+  border-radius: 24px;
+  padding: 20px;
+  position: relative;
+  margin-bottom: 20px;
+  @media only screen and (max-width: 1200px) {
+    width: 450px;
+  }
+  @media only screen and (max-width: 1060px) {
+    width: 600px;
+    justify-content: center;
+  }
+  .label {
+    position: absolute;
+    top: 35px;
+    left: 40px;
+    text-transform: capitalize;
+  }
+  h2 {
+    margin: 20px 0;
+    color: #fff;
+  }
+  p {
+    line-height: 100%;
+    color: #c2c6dd;
+  }
+}
