@@ -17,6 +17,10 @@
   @media only screen and (max-width: 790px) {
     width: 300px;
   }
+  @media only screen and (max-width: 500px) {
+    margin-left: 0;
+    width: 90%;
+  }
   label {
     display: flex;
     flex-direction: column;

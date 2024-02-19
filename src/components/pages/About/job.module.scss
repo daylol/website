@@ -43,6 +43,9 @@
     flex-direction: row-reverse;
     .general {
       margin-left: 50px;
+      @media only screen and (max-width: 500px) {
+        margin-left: 0;
+      }
     }
     @media only screen and (max-width: 790px) {
       flex-direction: column;
